@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+* {
+    box-sizing: border;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    /* min-height: 100vh; */
+
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+img {
+    max-width: 100%;
+    /* width: 100%; */
+}
+
+
+.email.active {
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+}
+
+/* CONTENT */
+
+main {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+/* ATTENTION  */
+
+img {
+    max-height: 100vh;
+}
+
+/* ********* */
+
+.desktop {
+    position: relative;
+    top: -60px;
+    left: -78px;
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-wrapper div {
+    padding: 0 5rem;
+}
+
+
+/* .content-wrapper div p {
+    max-width: 450px;
+    padding: 1rem 0;
+} */
+
+
+article h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+}
+
+article h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+
+article p {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.7;
+    max-width: 450px;
+    padding: 1rem 0;
+}
+
+article form {
+    display: flex;
+    padding-top: 1rem;
+
+}
+
+article form input[type=email] {
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    padding: .8rem;
+    width: 100%;
+}
+
+article form input[type=email]:focus {
+    outline: none;
+}
+
+article form input[type=email].active {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+
+article form input[type=email]::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+article form button {
+    border-radius: 30px;
+    border: none;
+    padding: .8rem 2.5rem;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    -webkit-box-shadow: 5px 6px 9px -3px rgba(0,0,0,0.34); 
+    box-shadow: 5px 6px 9px -3px rgba(0,0,0,0.34);
+}
+
+/* MOBILE LOGO */
+
+.mobile {
+    display: none;
+}
+
+/* ERROR CLASS - DYNAMICALLY CREATED */
+
+.error {
+    color: hsl(0, 93%, 68%);
+    text-align: left;
+    margin-top: .5rem;
+}
+
+.success {
+    color: green;
+}
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+
+    .mobile {
+        display: block;
+        padding: 2rem 3rem;
+    }
+
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .content-wrapper div {
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    article form {
+        display: block;
+    }
+
+    article div h1 {
+        font-size: 3rem;
+    }
+
+
+    article div {
+        text-align: center;
+        margin: 5rem 0;    
+    }
+    
+
+    article form button {
+        padding: .6rem 1.48rem;
+        position: relative;
+        bottom: 42px;
+        right: -178px;
+    }
+
+
+}

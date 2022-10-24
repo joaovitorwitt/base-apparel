@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="main.js" defer></script>
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  
+</head>
+<body>
+  
+  <div class="logo mobile">
+    <img src="./images/logo.svg">
+  </div>
+
+<main>
+
+
+  <article class="content-wrapper">
+    <div>
+        <div class="logo desktop">
+          <img src="./images/logo.svg">
+        </div>
+    
+        <h1><span>We're</span> coming soon</h1>
+    
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email belo to stay up-to-date with announcements and our launch deals.</p>
+      
+        <form>
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+          
+        </form>
+        
+        
+        
+        <!-- <div class="error">Please provide a valid email</div> -->
+      </div>
+      
+    </article>
+
+
+
+  <article class="image-wrapper">
+    <picture>
+      <!-- When the width is greater than  -->
+      <source media="(min-width: 768px)" srcset="./images/hero-desktop.jpg">
+      <img src="./images/hero-mobile.jpg" style="width: 100%;">
+    </picture>
+  </article>
+
+</main>
+
+</body>
+</html>
