@@ -35,6 +35,7 @@ img {
 
 main {
     display: flex;
+
 }
 
 article {
@@ -43,8 +44,15 @@ article {
 
 /* ATTENTION  */
 
-img {
-    max-height: 100vh;
+
+
+.image-wrapper {
+    min-height: 100vh;
+    background-image: url(./images/hero-desktop.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: red; */
 }
 
 /* ********* */
@@ -67,11 +75,6 @@ img {
     padding: 0 5rem;
 }
 
-
-/* .content-wrapper div p {
-    max-width: 450px;
-    padding: 1rem 0;
-} */
 
 
 article h1 {
@@ -152,20 +155,32 @@ article form button {
     color: green;
 }
 
+/* IMAGE!!!! */
+
+.morbin {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .desktop {
         display: none;
     }
 
+    .morbin {
+        display: block;
+    }
 
     .mobile {
         display: block;
         padding: 2rem 3rem;
     }
 
+    .image-wrapper {
+        display: none;
+    }
 
     main {
         flex-direction: column-reverse;
